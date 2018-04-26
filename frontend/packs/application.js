@@ -8,3 +8,14 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+import Rails from 'rails-ujs';
+import Turbolinks from 'turbolinks';
+
+Rails.start();
+Turbolinks.start();
+
+document.addEventListener('turbolinks:load', function() {
+  alert("turbolinks on load event works")
+})
+// $(document).on('turbolinks:load', function (){ alert("turbolinks on load event works") });
