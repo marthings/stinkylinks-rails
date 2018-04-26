@@ -1,11 +1,41 @@
 :root {
-  --background-color: rgb(80, 66, 66);
+  --background-color: rgb(80, 70, 70);
+  --background-color-shade: rgb(85, 75, 75);
   --text-color: rgb(247, 216, 216);
-  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-base: courier new;
 }
 
 body {
   background: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family-base);
+
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: rgb(202, 161, 161);
+  text-decoration: none;
+  position: relative;
+  &:active {
+    top: 1px;
+  }
+}
+
+.stinky-wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.stinky-nav {
+  padding: 20px 0;
+}
+
+.stinky-main {
+  padding: 40px 0;
+}
+
+.text-jumbo {
+  font-size: 3rem;
 }
