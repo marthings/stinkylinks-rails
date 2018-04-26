@@ -15,7 +15,6 @@ import Turbolinks from 'turbolinks';
 Rails.start();
 Turbolinks.start();
 
-document.addEventListener('turbolinks:load', function() {
-  alert("turbolinks on load event works")
-})
-// $(document).on('turbolinks:load', function (){ alert("turbolinks on load event works") });
+// document.addEventListener('turbolinks:load', function() {
+//   alert("turbolinks on load event works")
+// })
