@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_many :links
 
   validates :nick_name, uniqueness: true, presence: true
+
+  def likes?(link)
+    link.likes.where(user_id: id).any?
+  end
 end
