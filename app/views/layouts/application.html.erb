@@ -17,6 +17,8 @@
 
       <div class="stinky-nav">
         <%= link_to "Stinkylinks", root_url %>
+        
+        <%= link_to 'New Link', new_link_path %>
         <% if user_signed_in? %>
           <%= link_to "Edit profile", edit_user_registration_path %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete %>

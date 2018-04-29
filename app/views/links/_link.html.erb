@@ -1,0 +1,9 @@
+<div class="link">
+<a href="<%= link.url %>" target="_blank"><%= link.title %></a>
+<div class="link-meta">
+  Posted by: <%= link.user.nick_name %>
+  <% if user_signed_in? && current_user.id == link.user_id %>
+  <%= link_to 'Edit', edit_link_path(link) %>
+  <% end %>
+</div>
+</div>

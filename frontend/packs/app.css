@@ -1,5 +1,5 @@
 :root {
-  --background-color: rgb(80, 70, 70);
+  --background-color: #333;
   --background-color-shade: rgb(85, 75, 75);
   --text-color: rgb(247, 216, 216);
   --font-family-base: courier new;
@@ -12,6 +12,10 @@ body {
 
   padding: 0;
   margin: 0;
+}
+
+h1,h2,h3 {
+  font-weight: 300;
 }
 
 a {
