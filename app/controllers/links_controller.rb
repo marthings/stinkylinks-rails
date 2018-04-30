@@ -33,7 +33,7 @@ class LinksController < ApplicationController
   # PATCH/PUT /links/1
   def update
     if @link.update(link_params)
-      redirect_to @link, notice: 'Link was successfully updated.'
+      redirect_to links_path, notice: 'Link was successfully updated.'
     else
       render :edit
     end
