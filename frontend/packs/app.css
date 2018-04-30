@@ -1,24 +1,8 @@
+@import "variables";
 @import "forms";
 @import "alerts";
 @import "links";
 @import "button";
-
-:root {
-  --background-color: #fff;
-  --background-color-shade: #f8f8f8;
-  --text-color: #444;
-  --link-color: royalblue;
-  --font-family-base: 'Work Sans', sans-serif;
-
-  --spacing: 8px;
-  --border-color: #f1f1f1;
-
-  --warning: red;
-  --warning-color: #fff;
-
-  --default: royalblue;
-  --default-color: #fff;
-}
 
 body {
   background: var(--background-color);
@@ -42,10 +26,14 @@ a {
   }
 }
 
-.wrapper {
+.container {
   max-width: 60rem;
   padding: calc(var(--spacing) * 2);
   margin: 0 auto;
+}
+
+.site-header {
+  background: #f1f1f1;
 }
 
 .nav {

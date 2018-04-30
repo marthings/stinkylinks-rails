@@ -1,0 +1,16 @@
+:root {
+  --background-color: #fff;
+  --background-color-shade: #f8f8f8;
+  --text-color: #444;
+  --link-color: royalblue;
+  --font-family-base: 'Work Sans', sans-serif;
+
+  --spacing: 8px;
+  --border-color: #f1f1f1;
+
+  --warning: red;
+  --warning-color: #fff;
+
+  --default: royalblue;
+  --default-color: #fff;
+}
