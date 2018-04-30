@@ -1,7 +1,5 @@
 class ApiController < ApplicationController
-  #include Knock::Authenticable
-
-  #before_action :authenticate_user
+  protect_from_forgery unless: -> { request.format.json? }
   before_action :set_default_format
 
   private
