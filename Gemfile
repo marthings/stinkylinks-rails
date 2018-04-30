@@ -46,3 +46,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'foreman'
 gem 'devise'
+gem 'aws-sdk-s3', '~> 1.0.0.rc2'
