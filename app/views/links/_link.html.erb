@@ -1,10 +1,12 @@
 <div class="link">
-<a class="--link" href="<%= link.url %>" target="_blank"><%= link.title %></a>
+<a class="link--default" href="<%= link.url %>" target="_blank"><%= link.title %></a>
 <div class="link-meta">
-  <div class="<%= dom_id(link) %>-likes">
-    <%= render partial: "links/likes", locals: { link: link } %>
+  <div>
+    <div class="<%= dom_id(link) %>-likes">
+      <%= render partial: "links/likes", locals: { link: link } %>
+    </div>
+    <%= link.user.nick_name %>
   </div>
-  Stinker: <%= link.user.nick_name %>
   <% if user_signed_in? && current_user.id == link.user_id %>
   <%= link_to 'Edit', edit_link_path(link) %>
   <% end %>

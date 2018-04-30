@@ -1,0 +1,14 @@
+.button {
+  -webkit-appearance: none;
+  padding: var(--spacing) calc(var(--spacing) * 2);
+  display: inline-flex;
+  align-items: center;
+  &:focus {
+    outline: none;
+  }
+}
+
+.button--default {
+  background: var(--default);
+  color: var(--default-color);
+}

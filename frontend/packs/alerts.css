@@ -1,18 +1,19 @@
 .alert {
   padding: var(--spacing);
-  &.--top {
+  
+  &.alert--top {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
   }
 
-  &.--info {
+  &.alert--info {
     background: var(--default);
     color: var(--default-color);
   }
 
-  &.--warning {
+  &.alert--warning {
     background: var(--warning);
     color: var(--warning-color);
   }
