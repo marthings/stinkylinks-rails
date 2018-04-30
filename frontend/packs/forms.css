@@ -1,0 +1,22 @@
+.form-group {
+  margin: 0 0 calc(var(--spacing) * 2) 0;
+}
+
+.form-control {
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+
+  width: 100%;
+
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing);
+
+  &:focus {
+    outline: none;
+  }
+}

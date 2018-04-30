@@ -1,8 +1,22 @@
+@import "forms";
+@import "alerts";
+@import "links";
+
 :root {
-  --background-color: #333;
-  --background-color-shade: rgb(85, 75, 75);
-  --text-color: rgb(247, 216, 216);
+  --background-color: #fff;
+  --background-color-shade: #f8f8f8;
+  --text-color: #444;
+  --link-color: royalblue;
   --font-family-base: courier new;
+
+  --spacing: 8px;
+  --border-color: #f1f1f1;
+
+  --warning: red;
+  --warning-color: #fff;
+
+  --default: royalblue;
+  --default-color: #fff;
 }
 
 body {
@@ -14,12 +28,12 @@ body {
   margin: 0;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
   font-weight: 300;
 }
 
 a {
-  color: rgb(202, 161, 161);
+  color: var(--link-color);
   text-decoration: none;
   position: relative;
   &:active {
@@ -27,16 +41,19 @@ a {
   }
 }
 
-.stinky-wrapper {
+.wrapper {
   max-width: 60rem;
   margin: 0 auto;
 }
 
-.stinky-nav {
+.nav {
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.stinky-main {
+.main {
   padding: 40px 0;
 }
 

@@ -11,4 +11,10 @@ class User < ApplicationRecord
   def likes?(link)
     link.likes.where(user_id: id).any?
   end
+
+  def avatar_default
+    shortname = self.nick_name[0..1]
+    "#{shortname}"
+  end
+
 end

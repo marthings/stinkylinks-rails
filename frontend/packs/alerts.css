@@ -1,0 +1,19 @@
+.alert {
+  padding: var(--spacing);
+  &.--top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &.--info {
+    background: var(--default);
+    color: var(--default-color);
+  }
+
+  &.--warning {
+    background: var(--warning);
+    color: var(--warning-color);
+  }
+}
