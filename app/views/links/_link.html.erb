@@ -3,14 +3,14 @@
   <div class="<%= dom_id(link) %>-likes">
     <%= render partial: "links/likes", locals: { link: link } %>
   </div>
-  
+
   <a class="link--default" href="<%= link.url %>" target="_blank"><%= link.title %></a>
   
   <div class="link-meta">
       
     <div class="flex">
       <%= link.user.nick_name %>
-      <% if user_signed_in? && current_user.id == link.user_id %>
+      <% if user_signed_in? && current_user.id == link.user_id or current_user.try(:admin?) %>
         <%= link_to 'Edit', edit_link_path(link) %>
       <% end %>
     </div>
