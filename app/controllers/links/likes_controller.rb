@@ -13,7 +13,7 @@ class Links::LikesController < ApplicationController
   end
 
   def destroy
-    @link.likes.destroy_all
+    @link.likes.where(user_id: Current.user).destroy_all
 
     respond_to do |format|
       format.js
