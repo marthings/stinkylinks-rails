@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
+  namespace :admin do
+      resources :users
+      resources :likes
+      resources :links
+
+      root to: "users#index"
+    end
   namespace :api do
     namespace :v1 do
-      resources :links
+      resources :users, only: [:index, :show]
+      resources :links, only: [:index, :show]
     end
   end
 

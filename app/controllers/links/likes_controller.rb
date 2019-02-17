@@ -5,7 +5,7 @@ class Links::LikesController < ApplicationController
   before_action :set_link
 
   def create
-    @link.likes.first_or_create
+    @link.likes.find_or_create_by(user_id: Current.user)
 
     respond_to do |format|
       format.js
